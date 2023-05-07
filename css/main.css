@@ -100,6 +100,7 @@ body{
     margin-left: auto;
     padding-right: 20px;
     padding-left: 20px;
+    padding-bottom: 30px;
     
     background-color: var(--main-bg-color);
     border-radius: 5px;
@@ -473,6 +474,36 @@ body::-webkit-scrollbar-thumb:hover {
 
 /* MAIN STYLE END */
 
+/* FOOTER STYLE START */
+.site-footer {
+    margin-top: 40px;
+}
+.site-footer-box {
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+}
+.site-footer__link {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 30px;
+    color: var(--main-text-color);
+    text-decoration: none;
+    
+}
+
+.site-footer__list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin-left: 100px;
+    padding: 0;
+
+}
+
+.site-footer__item:not(:last-child) {
+    margin-right: 50px;
+}
 /* THANK YOU STYLE START */
 .main-box {
     width: 500px;
