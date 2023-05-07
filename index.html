@@ -16,6 +16,9 @@
     <!-- Header start -->
     <header class="site-header">
         <div class="containers">
+            <div id="progress">
+                <span id="progress-value"><img src="./img/up-arrow.png" alt="up arrow icon" width="30" height="30"></span>
+            </div>
             <div class="site-header__wrapper">
                 <a href="index.html" class="site-header__logolink">Union Service</a>
                 <nav class="site-header__navigation">
@@ -87,10 +90,41 @@
                         <img class="truck" src="./img/truck.svg" alt="" width="300" height="300">
                     </div>
                 </div>
+                <div class="contact-form">
+                    <div class="contact-form__box">
+                        <div class="contact-form__start">
+                            <div class="contact-form__address">
+                                <img class="contact-form__startimg" src="./img/addresss.png" alt="" width="50" height="50">
+                                <address class="contact-form__address">Uzbekistan, Tashkent, Sergeli District</address>
+                            </div>
+                            <div class="contact-form__tel">
+                                <img class="contact-form__startimg" src="./img/phone-call.png" alt="50" width="50">
+                                <a class="contact-form__tellink" href="tel:+998937489141">+998 93 748 91 41</a>
+                            </div>
+                            <div class="contact-form__email">
+                                <img class="contact-form__startimg" src="./img/mail.png" alt="" width="50" height="50">
+                                <a class="contact-form__emaillink" href="" class="contact-form__emaillink">unionservice@gmail.com</a>
+                            </div>
+                            
+                        </div>
+                        <div class="contact-form__end">
+                            <h3 id="contact" class="contact-title">Contact Us</h3>
+                            <form class="contact-form" action="https://formsubmit.co/mirjalolxurshida4941@gmail.com" method="POST">
+                                <input class="contact-inputname" name="user_name" type="text" placeholder="Enter your name" required>
+                                <input type="hidden" name="_next" value="https://unionservice.uz/thanks.html">
+                                <input type="hidden" name="_captcha" value="false">
+                                <input class="contact-inputemail" name="user_email" type="email" placeholder="Enter your email" required>
+                                <textarea class="contact-inputtext" name="user_message" id="" cols="36" rows="5" placeholder="Enter your message"></textarea>
+                                <button class="contact-inputbtn" type="submit">Send</button>
+                            </form>
+                        </div>
+                    </div>
+                    
+                </div>
             </div>
         </section>
-
-
+        
+        
         <!-- Services section finish  -->
     </main>
     <!-- Main finish  -->
@@ -100,5 +134,6 @@
         
     </footer>
     <!-- Footer finish -->
+    <script src="./js/app.js"></script>
 </body>
 </html>
