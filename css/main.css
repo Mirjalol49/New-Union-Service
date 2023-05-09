@@ -839,4 +839,16 @@ body::-webkit-scrollbar-thumb:hover {
     .aboutus__info {
         width: 280px;
     }
+
+    .main-box {
+        width:280px ;
+    }
+.main-title {
+    font-size: 25px;
 }
+
+.main-img {
+    width: 50px;
+}
+}
+
