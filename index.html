@@ -8,13 +8,13 @@
     <title>Union Service</title>
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/main.css">
-     <!-- <link rel="stylesheet" href="./css/main.min.css"> -->
+    <!-- <link rel="stylesheet" href="./css/main.min.css"> -->
 </head>
 <body>
     
     <!-- Header start -->
     <header class="site-header">
-        <div class="containers">
+        <div class="container">
             <div id="progress">
                 <span id="progress-value"><img src="./img/up-arrow.png" alt="up arrow icon" width="30" height="30"></span>
             </div>
@@ -33,19 +33,41 @@
                         </li>
                     </ul>
                 </nav>
-            </div>
-            <div class="hero-section__wrapper">
-                <h1 class="hero-section__title"><span>"Expert Auto Repairs for All Vehicles</span> - Trust Us for Top-Quality Maintenance and Repair Solutions!"</h1>
-                <img class="hero-section__img" src="./img/heroimg.png" alt="a building which repairs cars" width="900" height="500">
+                <button class="burger-btn hidden"><img src="./img/burger.png" alt="" width="50" height="50"></button>
             </div>
         </div>
     </header>
+    <!-- BURGER -->
+    <div class="burger-nav hidden">
+        <button class="burger-close"> <img  src="./img/close.png" alt="close icon" width="30" height="30"></button>
+        <nav class="site-burger__navigation">
+            <ul class="site-burger__list">
+                <li class="site-burger__item">
+                    <a href="#services" class="site-burger__link">Services</a>
+                </li>
+                <li class="site-burger__item">
+                    <a href="#about" class="site-burger__link">About us</a>
+                </li>
+                <li class="site-burger__item">
+                    <a href="#contact" class="site-burger__link">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
     
     <!-- Header finish -->
     
     <!-- Main start -->
     <main class="site-main">
-        
+        <!-- Hero section start  -->
+        <section class="hero-section">
+            <div class="container">
+                <div class="hero-section__wrapper">
+                    <h1 class="hero-section__title"><span>"Expert Auto Repairs for All Vehicles</span> - Trust Us for Top-Quality Maintenance and Repair Solutions!"</h1>
+                    <img class="hero-section__img" src="./img/heroimg.png" alt="a building which repairs cars" width="900" height="500">
+                </div>
+            </div>
+        </section>
         <!-- Services section start  -->
         <section class="services-section">
             <div class="container">
@@ -82,49 +104,47 @@
                         <p class="services-section__info">Don't let a broken AC or heating system make your driving or working experience uncomfortable. Our technicians can diagnose and repair issues with your vehicle's heating and cooling system, including recharge and replacement of refrigerant and other components.</p>
                     </li>
                 </ul>
-                <div class="aboutus">
-                    <h3 id="about" class="aboutus__title">About Us</h3>
-                    <p class="aboutus__info">We fix cars and big machines with high-quality services. Our experts diagnose and repair all kinds of problems using the latest tools and techniques. Trust us to keep your vehicle running smoothly and reliably with fast and friendly service.</p>
-                    <div class="aboutus__imgbox">
-                        <img src="./img/EXCAVATOR.png" alt="eksvator" width="280" height="300">
-                        <img class="autocrane" src="./img/autorcrane.png" alt="" width="300" height="200">
-                        
-                        <img  src="./img/truck.svg" alt="truck" width="300" height="300">
-                    </div>
-                </div>
-                <div class="contact-form">
-                    <div class="contact-form__box">
-                        <div class="contact-form__start">
-                            <div class="contact-form__address">
-                                <img class="contact-form__startimg" src="./img/addresss.png" alt="address icon" width="50" height="50">
-                                <address class="contact-form__address">Uzbekistan, Tashkent, Sergeli District</address>
-                            </div>
-                            <div class="contact-form__tel">
-                                <img class="contact-form__startimg" src="./img/phone-call.png" alt="phone icon" width="50" height="50">
-                                <a class="contact-form__tellink" href="tel:+998937489141">+998 93 748 91 41</a>
-                            </div>
-                            <div class="contact-form__email">
-                                <img class="contact-form__startimg" src="./img/mail.png" alt="email icon" width="50" height="50">
-                                <a class="contact-form__emaillink" href="">unionservice@gmail.com</a>
-                            </div>
-                        </div>
-                        <div class="contact-form__end">
-                            <h3 id="contact" class="contact-title">Contact Us</h3>
-                            <form class="contact-form" action="https://formsubmit.co/mirjalolxurshida4941@gmail.com" method="POST">
-                                <input class="contact-inputname" name="user_name" type="text" placeholder="Enter your name" required>
-                                <input type="hidden" name="_next" value="https://unionservice.uz/thanks.html">
-                                <input type="hidden" name="_captcha" value="false">
-                                <input class="contact-inputemail" name="user_email" type="email" placeholder="Enter your email" required>
-                                <textarea class="contact-inputtext" name="user_message" cols="36" rows="5" placeholder="Enter your message"></textarea>
-                                <button class="contact-inputbtn" type="submit">Send</button>
-                            </form>
-                        </div>
-                    </div>
+                
+                
+            </div>
+        </section>
+        <!-- Services section finish  -->
+        
+        <!-- About us section start  -->
+        <section class="aboutus-section">
+            <div class="container">
+              
+                <h3 id="about" class="aboutus__title">About Us</h3>
+                <p class="aboutus__info">We fix cars and big machines with high-quality services. Our experts diagnose and repair all kinds of problems using the latest tools and techniques. Trust us to keep your vehicle running smoothly and reliably with fast and friendly service.</p>
+
+                <div class="aboutus__imgbox">
+                    <img src="./img/EXCAVATOR.png" alt="eksvator" width="280" height="300">
+                    <img class="autocrane" src="./img/autorcrane.png" alt="" width="300" height="200">
+                    
+                    <img  src="./img/truck.svg" alt="truck" width="300" height="300">
                 </div>
             </div>
         </section>
         
-        <!-- Services section finish  -->
+        <!-- Contact section start -->
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact-form__box">
+                    <div class="contact-form__end">
+                        <h3 id="contact" class="contact-title">Contact Us</h3>
+                        <form class="contact-form" action="https://formsubmit.co/mirjalolxurshida4941@gmail.com" method="POST">
+                            <input class="contact-inputname" name="user_name" type="text" placeholder="Enter your name" required>
+                            <input type="hidden" name="_next" value="https://unionservice.uz/thanks.html">
+                            <input type="hidden" name="_captcha" value="false">
+                            <input class="contact-inputemail" name="user_email" type="email" placeholder="Enter your email" required>
+                            <textarea class="contact-inputtext" name="user_message" cols="36" rows="5" placeholder="Enter your message"></textarea>
+                            <button class="contact-inputbtn" type="submit">Send</button>
+                        </form>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
     </main>
     
     <!-- Main finish  -->
@@ -133,22 +153,37 @@
     <footer class="site-footer">
         <div class="container">
             <div class="site-footer-box">
-                <a class="site-footer__link" href="index.html">Union Service</a>
-                <ul class="site-footer__list">
-                    <li class="site-footer__item">
-                        <a class="site-header__link" href="#services">Services</a>
-                    </li>
-                    <li class="site-footer__item">
-                        <a class="site-header__link" href="#about">About</a>
-                    </li>
-                    <li class="site-footer__item">
-                        <a class="site-header__link" href="#contact">Contact</a>
-                    </li>
-                </ul>
+                <div class="site-footer__start-wrapper">
+                    <a class="site-footer__link" href="index.html">Union Service</a>
+                    <ul class="site-footer__list">
+                        <li class="site-footer__item">
+                            <a class="site-header__link footer-link" href="#services">Services</a>
+                        </li>
+                        <li class="site-footer__item">
+                            <a class="site-header__link footer-link" href="#about">About</a>
+                        </li>
+                        <li class="site-footer__item">
+                            <a class="site-header__link footer-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="site-footer__addressbox">
+                    <div class="site-footer__wrapper">
+                        <img class="contact-form__startimg" src="./img/addresss.png" alt="address icon" width="50" height="50">
+                        <address class="site-footer__address">Uzbekistan, Tashkent, Sergeli District</address>
+                    </div>
+                    <div class="site-footer__wrapper">
+                        <img class="contact-form__startimg" src="./img/phone-call.png" alt="phone icon" width="50" height="50">
+                        <a class="site-footer__tellink" href="tel:+998937489141">+998 93 748 91 41</a>
+                    </div>
+                    <div class="site-footer__wrapper">
+                        <img class="contact-form__startimg" src="./img/mail.png" alt="email icon" width="50" height="50">
+                        <a class="site-footer__emaillink" href="">unionservice@gmail.com</a>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>
-    
     <!-- Footer finish -->
     <script src="./js/app.js"></script>
 </body>
