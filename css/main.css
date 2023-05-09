@@ -835,4 +835,8 @@ body::-webkit-scrollbar-thumb:hover {
     .burger-icon {
        font-size: 10px;
     }
+
+    .aboutus__info {
+        width: 280px;
+    }
 }
