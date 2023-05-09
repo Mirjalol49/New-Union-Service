@@ -818,14 +818,14 @@ body::-webkit-scrollbar-thumb:hover {
         white-space: nowrap;
     }
     .hero-section__title {
-        font-size: 20px;
+        font-size: 25px;
         color: #fff;
         -webkit-text-stroke: 0px rgb(255, 255, 255);
-        width: 250px;
+        width: 280px;
     }
 
     .hero-section__img {
-        width: 250px;
+        width: 280px;
     }
     .burger-btn {
         margin-left: 100px;
