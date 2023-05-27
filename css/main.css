@@ -44,6 +44,7 @@
 */
 html {
   height: 100%;
+  scroll-behavior: smooth;
 }
 
 
@@ -89,6 +90,7 @@ body{
   margin: 0;
   padding: 0;
   font-family: "Poppins", "Arial", sans-serif;
+  font-weight: 400;
   background-color: #fff;
 }
 
@@ -228,6 +230,8 @@ body{
   align-items: center;
   flex-direction: column;
   text-align: center;
+  border-bottom: 1px solid #cccccc;
+  margin-bottom: 120px;
 }
 
 
@@ -235,3 +239,65 @@ body{
   margin-bottom: 40px;
 }
 
+.hero-section__text {
+  margin-bottom: 40px;
+}
+
+/*! SERVICE SECTION START  */
+
+.services-section__maintitle {
+  font-size: 32px;
+  line-height: 32px;
+  color: #333333;
+  margin-bottom: 32px;
+}
+
+.services-section__list {
+  display: flex;
+  
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.services-section__item {
+  display: flex;
+  margin-bottom: 80px;
+}
+
+.services-section__img {
+  border-radius: 24px;
+}
+
+.services-section__textbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 60px;
+  border-top: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
+  padding: 20px 0;
+  width: 870px;
+}
+
+.services-section__title {
+  font-family: "Bebas Neue";
+  font-size: 64px;
+  line-height: 64px;
+  font-weight: 400;
+  width: 538px;
+  margin-bottom: 78px;
+}
+
+.services-section__info {
+  font-size: 16px;
+  line-height: 24px;
+  width: 660px;
+}
+
+/*! Team section start  */
+.team-section {
+  background-color: #F2F2F2;
+  border-radius: 24px;
+}
