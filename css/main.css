@@ -89,6 +89,7 @@ body{
   margin: 0;
   padding: 0;
   font-family: "Poppins", "Arial", sans-serif;
+  background-color: #fff;
 }
 
 /* VISUALLY-HIDDEN */
@@ -107,7 +108,7 @@ body{
 
 /* CONTAINER */
 .container{
-  max-width: 1440px;
+  max-width: 1200px;
   margin-right: auto;
   margin-left: auto;
   padding-right: 20px;
@@ -119,9 +120,10 @@ body{
   flex-grow: 1;
 }
 
-/* HEADER STYLE START  */
+/*! HEADER STYLE START  */
 
 .site-header {
+  margin-bottom: 40px;
   padding: 14px 0;
   background-color: #013FFF;
 }
@@ -206,11 +208,30 @@ body{
   border-radius: 12px;
   border: 2px solid transparent;
   transition: 0.3s ease;
-
+  
   
 }
 
 .site-header__tel:hover {
   border: 2px solid #fff;
+}
+
+/* ************************************************ */
+
+/*! MAIN STYLE START  */
+
+/*! HERO SECTION STYLE START */
+
+.hero-section__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+
+.hero-section__img {
+  margin-bottom: 40px;
 }
 
