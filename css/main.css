@@ -134,7 +134,7 @@ body{
   font-weight: 700;
   text-decoration: none;
   color: #fff;
-  font-size: 20px;
+  font-size: 25px;
   line-height: 20px;
   
 }
@@ -151,7 +151,7 @@ body{
   text-decoration: none;
   color: #E6E6E6;
   line-height: 20px;
-  font-size: 16px;
+  font-size: 20px;
   
 }
 .site-header__link:hover {
@@ -167,6 +167,22 @@ body{
   display: flex;
   align-items: center;
   
+}
+
+.select-box {
+  margin-right: 30px;
+}
+
+.select-link {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  border-bottom: 2px solid transparent;
+  transition: 0.3s ease;
+}
+
+.select-link:hover {
+  border-bottom: 2px solid #fff;
 }
 .site-header__icon-link {
   
@@ -437,8 +453,9 @@ body{
   flex-direction: column;
   justify-content: space-between;
   height: 500px;
-  
 }
+
+
 
 .contact-title {
   font-family: "Bebas Neue";
@@ -446,12 +463,13 @@ body{
   font-size: 80px;
   line-height: 80px;
   color: #fff;
+  white-space: nowrap;
 }
 
 .contact-form {
   display: flex;
   flex-direction: column;
-  
+  width: 60%;
 }
 
 .contact-inputname {
