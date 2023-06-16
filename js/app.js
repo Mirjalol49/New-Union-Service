@@ -1,55 +1,80 @@
-//! TOP SCROLL PROGRESS
-let calcScrollValue = () => {
-    let scrollProgress = document.getElementById("progress");
-    let progressValue = document.getElementById("progress-value");
-    let pos = document.documentElement.scrollTop;
-    let calcHeight =
-      document.documentElement.scrollHeight -
-      document.documentElement.clientHeight;
-    let scrollValue = Math.round((pos * 100) / calcHeight);
-    if (pos > 100) {
-      scrollProgress.style.display = "grid";
+// !TOP TO SCROLL BTN
+let topScroll = document.querySelector(".top-btn");
+
+window.addEventListener('scroll', checkHeight);
+
+function checkHeight() {
+  if (window.scrollY > 500) {
+    topScroll.classList.add("btn-display");
+  } else {
+    topScroll.classList.remove("btn-display");
+  }
+}
+
+topScroll.addEventListener('click', ()=>{
+  window.scrollTo({
+    top:0
+  })
+})
+
+
+// ! ANIMATION SCROLL REVEAL
+
+const scroll = ScrollReveal({
+  origin: 'top',
+  distance: '50px',
+  duration: 2000,
+  delay: 300,
+  // reset: true
+})
+
+scroll.reveal(`.site-header__wrapper`, {origin: "bottom"})
+scroll.reveal(`.hero-section__wrapper`)
+scroll.reveal(`.services-section__item`)
+scroll.reveal(`.team-section__teambox`)
+scroll.reveal(`.aboutus-section`)
+scroll.reveal(`.contact-section`)
+scroll.reveal(`.site-footer`)
+
+
+// !BURGER BTN
+
+let burgerBtn = document.querySelector(".burger-label");
+let showNav = document.querySelector("#show-nav");
+
+function clickBtn() {
+  burgerBtn.addEventListener("click", () => {
+    if (showNav.classList.contains("burger-none")) {
+      showNav.classList.remove("burger-none");
+      showNav.classList.add("burger-wrapper");
+     
     } else {
-      scrollProgress.style.display = "none";
+      showNav.classList.add("burger-none");
+      showNav.classList.remove("burger-wrapper");
+     
     }
-    scrollProgress.addEventListener("click", () => {
-      document.documentElement.scrollTop = 0;
-    });
-    scrollProgress.style.background = `conic-gradient(#001a2e ${scrollValue}%, #d7d7d7 ${scrollValue}%)`;
-  };
-  window.onscroll = calcScrollValue;
-  window.onload = calcScrollValue;
-
-  // BURGER MENU
-
-  
-  let elCloseBtn = document.querySelector(".burger-close");
-let elNavMenu = document.querySelector(".burger-nav");
-let elBurgerBtn = document.querySelector(".burger-btn");
-let elBurgerLinks = document.querySelectorAll(".site-burger__link");
-
-elCloseBtn.addEventListener("click", function() {
-  elNavMenu.classList.remove("slide-in");
-  elNavMenu.classList.add("slide-out");
-  setTimeout(() => {
-    elNavMenu.classList.add("hidden");
-    elNavMenu.classList.remove("slide-out");
-  }, 300);
-});
-
-elBurgerBtn.addEventListener("click", function() {
-  elNavMenu.classList.toggle("hidden");
-  elNavMenu.classList.toggle("slide-in");
-  elNavMenu.classList.toggle("display")
-});
-
-elBurgerLinks.forEach(function(elBurgerLink) {
-  elBurgerLink.addEventListener("click", function() {
-    elNavMenu.classList.remove("slide-in");
-    elNavMenu.classList.add("slide-out");
-    setTimeout(() => {
-      elNavMenu.classList.add("hidden");
-      elNavMenu.classList.remove("slide-out");
-    }, 300);
   });
+}
+
+
+// !SWIPER
+
+const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+  
+  // If we need pagination
+  pagination: {
+      el: '.swiper-pagination',
+  },
+  
+  // Navigation arrows
+  navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+  }
+  
 });
+
+
