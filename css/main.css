@@ -131,7 +131,19 @@ body{
   display: block;
 }
 
+@media only screen and (max-width: 400px) {
+  .top-btn {
+  padding-top: 5px;
+    width: 30px;
+    height: 30px;
+  }
 
+  .top-btn__img {
+    width: 20px;
+    margin: auto 0;
+    height: 20px;
+  }
+}
 
 /*! HEADER STYLE START  */
 
@@ -271,6 +283,18 @@ body{
   }
 }
 
+@media only screen and (max-width: 400px) {
+  .site-header__logo-img {
+    width: 130px;
+    height: 50px;
+  }
+.site-header__tel {
+  padding: 10px 20px;
+  font-size: 15px;
+ 
+}
+  
+}
 
 /* !BURGER STYLE EDIT */
 
@@ -284,6 +308,7 @@ body{
   display:flex;
   flex-direction:column;
   width:60px;
+  
   cursor:pointer;
 }
 
@@ -343,6 +368,7 @@ body{
 @media only screen and (max-width: 1150px) {
   .burger-icon{
     display: block;
+   
   }
 }
 
@@ -367,6 +393,7 @@ body{
     z-index: 50;
     background-color: #013FFF;
     padding: 20px 35px;
+    
   }
   
   .burger-wrapper {
@@ -424,6 +451,14 @@ body{
   
 }
 
+@media only screen and (max-width: 400px) {
+
+  
+  
+  
+  
+}
+
 /* ************************************************ */
 
 /*! MAIN STYLE START  */
@@ -478,7 +513,7 @@ body{
 
 @media only screen and (max-width: 750px) {
   .hero-section__img {
-    width:  320px;
+    width:  300px;
     height: 380px;
     object-fit: cover;
     border-radius: 24px;
