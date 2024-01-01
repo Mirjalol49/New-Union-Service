@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+}
+
+/* GENERAL */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  height    : 100%;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  height : auto;
+}
+
+body {
+  display               : flex;
+  flex-direction        : column;
+  height                : 100%;
+  margin                : 0;
+  padding               : 0;
+  line-height           : 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family           : --, "Arial", sans-serif;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+
+/* VISUALLY-HIDDEN */
+.visually-hidden {
+  position   : absolute;
+  width      : 1px;
+  height     : 1px;
+  margin     : -1px;
+  padding    : 0;
+  border     : 0;
+  white-space: nowrap;
+  clip-path  : inset(100%);
+  clip       : rect(0 0 0 0);
+  overflow   : hidden;
+}
+
+/* CONTAINER */
+.container {
+  max-width    : 1440px;
+  margin-right : auto;
+  margin-left  : auto;
+  padding-right: 20px;
+  padding-left : 20px;
+}
+
+/* STICKY-FOOTER */
+.site-main {
+  flex-grow: 1;
+}
