@@ -1,0 +1,26 @@
+.header-top {
+    display        : flex;
+    align-items    : center;
+    justify-content: space-between;
+}
+
+.header-top__wrapper {
+    display: flex;
+
+    justify-content: space-between;
+    width          : 100%;
+    max-width      : 600px;
+}
+
+.header-top__start {
+    display           : flex;
+    /* justify-content: space-between;
+    width             : 100%;
+    max-width         : 900px; */
+
+}
+
+.header-top__width {
+    width    : 100%;
+    max-width: 260px;
+}

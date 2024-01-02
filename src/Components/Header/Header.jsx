@@ -1,3 +1,4 @@
+import "./Header.css";
 import Location from "../../assets/Images/location.png";
 import Time from "../../assets/Images/time.png";
 import Phone from "../../assets/Images/phone.png";
@@ -9,18 +10,22 @@ const Header = () => {
           <div className="header-top__wrapper">
             <div className="header-top__start">
               <img src={Location} alt="location icon" width={20} height={20} />
-              <address>Наш адрес: г. Бишкек, ул. Ляляля 69</address>
+              <address className="header-top__address header-top__width">
+                Наш адрес: <p>г. Бишкек, ул. Ляляля 69</p>
+              </address>
             </div>
 
-            <div className="header-top__middle">
+            <div className="header-top__start">
               <img src={Time} alt="time icon" width={20} height={20} />
-              <time>График работы: С 8:00 до 22:00 без выходных</time>
+              <time className="header-top__time header-top__width">
+                График работы: <span>С 8:00 до 22:00 без выходных</span>
+              </time>
             </div>
+          </div>
 
-            <div className="header-top__end">
-              <img src={Phone} alt="Phone icon" width={20} height={20} />
-              <a href="998901369334">+998 90 136 93 34</a>
-            </div>
+          <div className="header-top__end">
+            <img src={Phone} alt="Phone icon" width={20} height={20} />
+            <a href="tel:+998901369334">+998 90 136 93 34</a>
           </div>
         </div>
       </div>
