@@ -1,0 +1,38 @@
+.hero-section {
+    padding: 65px 0;
+}
+
+.hero-section__title {
+    color                : #333;
+    font-feature-settings: 'liga'off;
+    font-size            : 60px;
+    font-weight          : 700;
+    line-height          : 60px;
+    width                : 100%;
+    max-width            : 540px;
+
+}
+
+.hero-section__text {
+    color                : #333333cc;
+    font-feature-settings: 'liga'off;
+    font-size            : 18px;
+    font-weight          : 400;
+    line-height          : normal;
+    width                : 100%;
+    max-width            : 496px;
+    line-height          : 25px;
+    margin               : 30px 0;
+}
+
+.hero-section__wrapper {
+    display        : flex;
+    align-items    : center;
+    justify-content: space-between;
+}
+
+.hero-section__img {
+    width    : 100%;
+    max-width: 850px;
+    height   : auto;
+}
