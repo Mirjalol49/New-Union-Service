@@ -13,7 +13,7 @@ const Header = () => {
             <div className="header-top__start">
               <img src={Location} alt="location icon" width={20} height={20} />
               <address className="header-top__address header-top__width">
-                Наш адрес: <p>г. Бишкек, ул. Ляляля 69</p>
+                Наш адрес: <p>Tashkent, Sergeli</p>
               </address>
             </div>
 
@@ -31,7 +31,7 @@ const Header = () => {
           </div>
         </div>
         <div className="header-bottom">
-          <a href="./index.html">
+          <a href="/">
             <img className="header-bottom__logo" src={Logo} alt="logo img" />
           </a>
           <nav>
